@@ -1,7 +1,9 @@
 body, html{
 	height: 100%;
+	overflow-y: none;
 
 }
+
 main{
 	display: flex;
 	justify-content: center;
@@ -9,10 +11,35 @@ main{
 	background: linear-gradient(0deg, #fff, #A8C7E4);
 	font-family: Tahoma;
 }
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #f7efef;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5a2a2;
+  border-radius: 0px;
+}
 .container{
     width: 1000px;	
 	display: flex;
 	height: 100%;
+	
+}
+.right-header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+.right-header div{
+padding-right: 25px;
+flex-grow: 1;
+}
+.right-header label{
+width: 25px;
 	
 }
 .right-block{
@@ -21,16 +48,11 @@ main{
 	border: 1px solid #ECF0F1;
 	flex-grow: 1;
 }
-.right-block header{
-	border-bottom: 1px solid #D8E3E5;
-	height: 27px;
-	flex-shrink: 0;
-	background: #EFF4F8;
 
-}
 .container-right{
 	display: flex;
     flex-direction: column;
+    overflow-y: scroll;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -87,7 +109,7 @@ main{
 	display: none;
 }
 .right-block footer{
-	height: 50px;
+	flex-grow: 1;
 	flex-shrink: 0;
 	background: #2F3B47;
 }
@@ -98,13 +120,10 @@ main{
 	display: flex;
 	flex-direction: column;
 }
-.left-block header{
-	border-bottom: 1px solid #F0F0F0;
-	height: 50px;
-	flex-shrink: 0;
-	background: #fff;
 
-}
+
+
+
 .orders{	
 	display: flex;
 	flex-direction: column;
@@ -123,6 +142,10 @@ main{
 	background: #fff;
 	padding: 9px;
 	padding-bottom: 14px;
+}
+.order-item:hover{
+  background-color: #E8EFF7;
+  cursor: pointer;
 }
 .order-container-1 {
 display: flex;
@@ -144,7 +167,7 @@ flex-direction: row;
 justify-content: space-between;
 }
 .left-block footer{
-	height: 50px;
+	
 	flex-shrink: 0;
 	background: #2F3B47;
 }
@@ -236,6 +259,37 @@ label[for="humburger"]{
 	border-bottom: 1px solid #D9DDE6;
 	padding-bottom: 10px; 
 }
+.search{
+  display: flex;
+  flex-direction: row;
+  border: 1px #DFE4E5 solid;
+  margin: 10px;
+  justify-content: space-between;
+  padding: 3px;
+  margin-bottom: 7px;
+}
+
+input[name="search"]
+{
+  padding-left: 3px;
+  font-style: italic;
+  flex-grow: 1;
+  border: none;
+  width: 180px;
+}
+.form-img img{
+  cursor: inherit;
+  margin-left: 5px;
+}
+.form-img img{
+  cursor: pointer;
+  margin-left: 5px;
+}
+.form-img{
+	display: flex;
+	flex-direction: row;
+}
+
 @media screen and (max-width: 800px){
 .left-block{
 	display: none;
@@ -252,7 +306,8 @@ label[for="humburger"]{
 .container{
 width: 1250px;
 }
-}
+
+
 @media screen and (max-width: 550px){
 .table tr{
 	display: flex;

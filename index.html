@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="elem.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="table.css">
 
 </head>
 <body>
@@ -14,9 +15,15 @@
 		<input type="checkbox" id="humburger" class="humburger">
 		<div class="left-block">
 			<header>
-				Orders(10)
-				<form>
-   					<p><input type="search" name="q" placeholder="Поиск"> </p>
+				<div class="head-name">
+					Orders(10)
+				</div>
+				<form class="search">
+   					<input type="search" name="search"  placeholder="Поиск">
+   				<div class="form-img">
+                	<img src="image/search.png" width="15px" alt="">
+                	<img src="image/refresh.png" width="15px" alt="">
+                </div>
    				</form>
 			</header>
 			<div class="orders">
@@ -262,14 +269,18 @@
 				</div>	
 			</div>	
 
-			<footer>
-				footer
-			</footer>		
+		<footer class="first-footer">
+            <img src="image/filter.png" width="25px" alt="">
+            <img src="image/hum2.png" width="25px" alt="">
+         </footer>	
 		</div>
 		<div class="right-block">
-			<header>
-				Order
-				<label for="humburger">xxx</label>
+			<header class="right-header">
+				<label for="humburger"><img src="image/hum.png" width="25px"></label>
+				<div class="head-name">
+					Order
+				</div>
+				
 			</header>			
 			<div class="container-right">
 				<div class="inf-order">
@@ -332,53 +343,46 @@
 					<div class="product-show">
 						Product
 					</div>
-					<table class="product-table">
-						<tr class="product-table-head">
-							<td class="left product">
-								Product
-							</td>
-							<td class="center price">
-								Unit Price
-							</td>
-							<td class="right quanlity">
-								Quanlity
-							</td>
-							<td class="right total">
-								Total
-							</td>
-						</tr>
-						<tr class="product-info">
-							<td class="left">
-								<div class="bold">
-									Aniseed Syrup
-								</div>
-								<div class="little">
-									1412
-								</div>
-							</td>
-							<td class="center">
-								<div class="bold">
-									65.89 EUR
-								</div>	
-							</td>
-							<td class="right">
-								<div class="bold">
-									899
-								</div>
-							</td>
-							<td class="right">
-								<div class=bold>
-									59 235,11 <span class="little">EUR</span>
-								</div>	
-							</td>
-						</tr>
-					</table>
+					 <div class="line-items-table">
+					 	 <div class="line-th little">
+			                  <div data-label="Product"> Product</div>
+			                  <div data-label="Unit Price"> Unit Price</div>
+			                  <div data-label="Quantity"> Quantity</div>
+			                  <div data-label="Total"> Total</div>
+                		</div>
+						<div class="line-tr">
+
+		                    <div data-label="" > <span class="bold naming">Tunnbrod</span> 
+		                    <span class='little number'>5672</span></div>
+		                    <div class="hidder">Unit Price</div>
+		                    <div data-label="Unit Price"> <span><span class="price">14.89 </span>
+		                    <span class="little wallet-table">EUR</span></span></div>
+		                    <div class="hidder">Quantity</div>
+		                    <div data-label="Quantity"><span>
+		                    <span class="little">2346</span></span></div>
+		                    <div class="hidder">Total</div>
+		                    <div data-label="Total" class="bold"><span> 
+		                    <span class="price"> 34980,11</span><span class="little wallet-table"> EUR</span></span></div>
+                  		</div>
+                  		<div class="line-tr">
+		                    <div data-label="" > <span class="bold naming">Tunnbrod</span> 
+		                    <span class='little number'>5672</span></div>
+		                    <div data-label="Unit Price"> <span><span class="price">14.89 </span>
+		                    <span class="little wallet-table">EUR</span></span></div>
+		                    <div data-label="Quantity"><span> <span class="little">2346</span></span></div>
+		                    <div data-label="Total" class="bold"><span> <span class="price"> 34980,11</span>
+		                    <span class="little wallet-table"> EUR</span></span></div>
+                  		</div>
+					 </div>
+					
 				</div>
 			</div>
 			<footer>
-				footer
+				<div class="second-footer">
+					<img src="image/mail.png"  width="25px" alt="">
+				</div>
 			</footer>
-						
+					
 		</div>
 	</div>
 </div>

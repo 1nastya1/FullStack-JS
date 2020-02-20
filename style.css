@@ -1,0 +1,141 @@
+.right-block header{
+	border-bottom: 1px solid #D8E3E5;
+	height: 27px;
+	flex-shrink: 0;
+	background: #EFF4F8;
+	text-align: center;
+}
+.name-ord{
+
+}
+.inf-order{
+	padding: 20px;
+	background: #EFF4F8;
+	border-bottom: 2px solid #D9DDE6;
+}
+.little{
+	font-size: 12px;
+	color: #93989C;
+	font-weight: normal;
+}
+.status{
+	color: green;
+}
+.date{
+	font-size: 18px;
+}
+.big{
+	font-size: 17px;
+	font-weight: 400;
+}
+.inf-order-1{
+	font-size: 19px;
+	color: #4D5256
+}
+.eu{
+	color: #87888C;
+}
+.eur{
+	font-size: 12px;
+	color: #87888C;
+}
+.big-2{
+	font-size: 17px;
+	color: #504E4F;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid #E2E2E2;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+.address{
+	background: #fff;
+	border-bottom: 1px solid #D9DDE6;
+}
+.table{
+	margin-left: 90px;
+	margin-bottom: 45px; 
+}
+.table tr td:nth-child(2n) {
+	font-size: 15px;
+	color:#656563;
+}
+.product, .price, .quanlity, .total{
+	font-size: 15px;
+	color: #605C5D;
+
+}
+.product-table-head{
+	border-bottom: 1px solid #D9DDE6;
+	color: #F7F7F7;
+}
+.product-info{
+	background: #fff;
+}
+.bold{
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.product-table{
+	border-bottom: 1px solid #D9DDE6;
+}
+.product-show{
+	font-size: 15px;
+	color: #605C5D;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid #D9DDE6;
+	padding-bottom: 10px; 
+}
+.left-block header{
+	text-align: center;
+		border-bottom: 1px solid #F0F0F0;
+		padding-top: 10px;
+	flex-shrink: 0;
+	background: #fff;
+}
+.head-name{
+	font-size: 15px;
+	color:#93989C;
+
+	font-weight: normal;
+
+}
+.first-footer{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: #2F3B47;
+	flex-shrink: 0;
+	padding-right: 15px;
+}
+.first-footer img{
+	margin-left: 25px;
+}
+.second-footer{
+	background-color: #2F3B47;
+	flex-shrink:0;
+	flex-grow: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.second-footer img{
+	cursor: pointer;
+	margin-right: 25px;
+	margin-top: 10px;
+}
+.search-form{
+	border: none;
+}
+.hidder{
+	font-size: 15px;
+    color: #605C5D;
+}
+
+
+
