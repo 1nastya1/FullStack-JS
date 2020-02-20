@@ -109,7 +109,7 @@ width: 25px;
 	display: none;
 }
 .right-block footer{
-	flex-grow: 1;
+	flex-grow: 0;
 	flex-shrink: 0;
 	background: #2F3B47;
 }
@@ -150,9 +150,7 @@ width: 25px;
 .order-container-1 {
 display: flex;
 flex-direction: row;
-justify-content: space-between;
-
-
+justify-content: space-between
 }
 .order-container-2 {
 display: flex;
@@ -167,6 +165,7 @@ flex-direction: row;
 justify-content: space-between;
 }
 .left-block footer{
+	flex-grow: 0;
 	
 	flex-shrink: 0;
 	background: #2F3B47;
