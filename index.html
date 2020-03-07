@@ -3,387 +3,205 @@
 <head>
 	<meta charset="utf-8">	
 	<title>Orders</title>
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="elem.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/elem.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/table.css">
+	<script type="text/javascript" src="JS/jquery-3.4.1.js"></script>
+	<script type="text/javascript"src="JS/onclick.js">
 
+    </script>
+	<script src="JS/data.js">
+		
+	</script>
+	<script src="JS/onload.js">
+
+
+    </script>
+    <script src="JS/search.js">
+
+    </script>
+    <script src="JS/prodInfo.js">
+
+    </script>
 </head>
 <body>
 <main>
 	<div class="container">
 		<input type="checkbox" id="humburger" class="humburger">
-		<div class="left-block">
+		<section class="left-block">
 			<header>
 				<div class="head-name">
 					Orders(10)
 				</div>
-				<form class="search">
-   					<input type="search" name="search"  placeholder="Поиск">
-   				<div class="form-img">
-                	<img src="image/search.png" width="15px" alt="">
-                	<img src="image/refresh.png" width="15px" alt="">
-                </div>
+				<form class="search" action="#" method="post">
+   					<input type="search" name="search" class="search_field"  placeholder="Поиск">
+   					<div class="form-img">
+                		<img src="image/search.png" width="17px" onclick="find_order()">
+                		<img src="image/refresh.png" width="17px" onclick="add_orders()">
+                	</div>
    				</form>
 			</header>
 			<div class="orders">
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
 
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date" >
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>
-				<div class="order-item">
-					<div class="order-container-1">
-						<div class="big">
-							Order 13123
-						</div>
-						<div class="date">
-							21.12.2006
-						</div>
-					</div>
-					<div class="order-container-2 little">
-						<div>
-							Tortuga restaurante
-						</div>
-						<div class="status">
-							In time
-						</div>
-					</div>
-					<div class="order-container-3 little">
-						<div>
-							Shipped: 12.01.2007
-						</div>
-
-					</div>
-				</div>	
 			</div>	
+			<footer class="first-footer">
+            	<img src="image/filter.png" width="25px">
+            	<img src="image/hum2.png" width="25px">
+         	</footer>	
+		</section>
 
-		<footer class="first-footer">
-            <img src="image/filter.png" width="25px" alt="">
-            <img src="image/hum2.png" width="25px" alt="">
-         </footer>	
-		</div>
-		<div class="right-block">
+		<section class="right-block">
 			<header class="right-header">
 				<label for="humburger"><img src="image/hum.png" width="25px"></label>
 				<div class="head-name">
 					Order
 				</div>
-				
 			</header>			
 			<div class="container-right">
 				<div class="inf-order">
 				    <div class="inf-order-1">
-						<div class="number-of-order">
-							Order 3456
-						</div>
-					<div>
-						<div class="eu">
-							150 925,15
-						</div>
-						<div class="eur">
-							EUR
+							<div class="number-of-order">
+								Order 3456
+							</div>
+						<div>
+							<div class="eu">
+								150 925,15
+							</div>
+							<div class="eur">
+								EUR
+							</div>
 						</div>
 					</div>
+
+					<div class="inf-order-2 little">
+				    	<div class="custumer">
+				    		
+				    	</div>
+				    	<div class="ordered">
+				    		
+				    	</div>
+				    	<div class="shipped">
+				    		
+				    	</div>
 				    </div>
-				    <div class="inf-order-2 little">
-				    	<div>
-				    		Customer: Tortuga restaurante
+				    <div class="inf-order-icons">
+				    	<div class="truck-icon active" onclick="shipping_active();">
+				    		<img src="image/truck.png" width="45px">
 				    	</div>
-				    	<div>
-				    		Ordered: 21 дек. 2006
-				    	</div>
-				    	<div>
-				    		Shipped: 12.01.2007
-				    	</div>
+				    	<div class="person-icon" onclick="custumer_active();">
+				    		<img src="image/person.png" width="35px" height="35">
+				   		</div> 
 				    </div>
 			    </div>
 				<div class="address">
-					<div class="big-2">
+					<div class="big-2 ShippedInfo">
 						Shipping address
 					</div>
-					<table class="table">
-                  <tr >
-                    <td class="little">Name:</td>
-                    <td >ExcellentParcel</td>
-                  </tr>
-                  <tr >
-                    <td class="little">Street:</td>
-                    <td >Tottenham Court Road</td>
-                  </tr>
-                  <tr>
-                    <td class="little">ZIP Code / City:</td>
-                    <td >London</td>
-                  </tr>
-                  <tr>
-                    <td class="little">Region:</td>
-                    <td >Greater London</td>
-                  </tr>
-                  <tr>
-                    <td class="little">Country:</td>
-                    <td >United Kingdom</td>
-                  </tr>
-                </table>
-				</div>
-				<div class="item-table">
-					<div class="big-2">
-						Line Items(4)
-					</div>
-					<div class="product-show">
-						Product
-					</div>
-					 <div class="line-items-table">
-					 	 <div class="line-th little">
-			                  <div data-label="Product"> Product</div>
-			                  <div data-label="Unit Price"> Unit Price</div>
-			                  <div data-label="Quantity"> Quantity</div>
-			                  <div data-label="Total"> Total</div>
+						<div class="ShippedInfo">
+						<table class="table">
+                  			<tr >
+                    			<td class="little">Name:</td>
+                    			<td class="shipped-name" >ExcellentParcel</td>
+                  			</tr>
+                 		 	<tr >
+                    			<td class="little">Street:</td>
+                    			<td class="shipped-address">Tottenham Court Road</td>
+                  			</tr>
+                  			<tr>
+                    			<td class="little">ZIP Code / City:</td>
+                    			<td class="zip">London</td>
+                  			</tr>
+                  			<tr>
+                    			<td class="little">Region:</td>
+                    			<td class="region">Greater London</td>
+                  			</tr>
+                  			<tr>
+                    			<td class="little">Country:</td>
+                    			<td class="country">United Kingdom</td>
+                  			</tr>
+                		</table>
                 		</div>
-						<div class="line-tr">
-
-		                    <div data-label="" > <span class="bold naming">Tunnbrod</span> 
-		                    <span class='little number'>5672</span></div>
-		                    <div class="hidder">Unit Price</div>
-		                    <div data-label="Unit Price"> <span><span class="price">14.89 </span>
-		                    <span class="little wallet-table">EUR</span></span></div>
-		                    <div class="hidder">Quantity</div>
-		                    <div data-label="Quantity"><span>
-		                    <span class="little">2346</span></span></div>
-		                    <div class="hidder">Total</div>
-		                    <div data-label="Total" class="bold"><span> 
-		                    <span class="price"> 34980,11</span><span class="little wallet-table"> EUR</span></span></div>
-                  		</div>
-                  		<div class="line-tr">
-		                    <div data-label="" > <span class="bold naming">Tunnbrod</span> 
-		                    <span class='little number'>5672</span></div>
-		                    <div data-label="Unit Price"> <span><span class="price">14.89 </span>
-		                    <span class="little wallet-table">EUR</span></span></div>
-		                    <div data-label="Quantity"><span> <span class="little">2346</span></span></div>
-		                    <div data-label="Total" class="bold"><span> <span class="price"> 34980,11</span>
-		                    <span class="little wallet-table"> EUR</span></span></div>
-                  		</div>
-					 </div>
-					
+                		
+               		 	<div class="big-2 CustomerInfo">
+							Processor Information
+						</div>
+						<div class="info CustomerInfo">
+						<div class="main-info">
+                  				<div class="details">
+                   					Details
+                  				</div>
+							<div>
+							<table class="table-details">
+                  				<tr >
+                    				<td class="little">Name: </td>
+                    				<td class="name-surname" ></td>
+                  				</tr>
+                  				<tr >
+                    				<td class="little">Street: </td>
+                    				<td class="custumer-address"></td>
+                  				</tr>
+                  				<tr>
+                    				<td class="little">Phone: </td>
+                    				<td class="phone"></td>
+                  				</tr>
+                  				<tr>
+                    				<td class="little">Email: </td>
+                    				<td class="email"></td>
+                  				</tr>
+                			</table>
+            				</div>
+            			</div>
+             				<div class="customer-img">
+                  				<div class="picture">
+                    				Picture
+                  				</div>
+                  				<img src="image/profile.png" width="120px" height="120px" alt="">
+                			</div>
+             		 	</div>
+					<div class="item-table">
+						<div class="lineItem big-2">
+							Line Items()
+						</div>
+						<form class="search" action="#" method="post">
+   							<input type="search" name="search" class="search_products"  placeholder="Поиск">
+   							<div class="form-img">
+                				<img src="image/search.png" width="17px" onclick="find_order()">
+                				<img src="image/refresh.png" id="jsOrderRefresher" width="17px" onclick="add_orders()">
+                			</div>
+   						</form>
+						<div class="product-show">
+							Product
+						</div>
+						<div class="line-th little">
+			                <div data-label="Product"> Product
+			                	<img src="image/sort.png" height="12px">
+			                </div>
+			                <div data-label="UnitPrice"> Unit Price
+			                	<img src="image/sort.png" height="12px">
+			                </div>
+			                <div data-label="Quantity"> Quantity
+			                	<img src="image/sort.png" height="12px">
+			                </div>
+			                <div data-label="Total"> Total
+			                	<img src="image/sort.png" height="12px">
+			                </div>
+                		</div>
+							<div class="line-tr">
+                  			</div>
+                  		 	<div class="buffer-line-tr">
+                        	</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<footer>
+				<footer>
 				<div class="second-footer">
 					<img src="image/mail.png"  width="25px" alt="">
 				</div>
 			</footer>
-					
-		</div>
+			</div>
+			
+		</section>
 	</div>
 </div>
 </main>

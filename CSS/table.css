@@ -23,7 +23,6 @@
   flex-direction: row;
   flex-grow: 1;
   border-top: 1px #DFE4E5 solid;
-  border-bottom:  1px #DFE4E5 solid;
   align-items: center;
 }
 .line-tr div{
@@ -80,5 +79,9 @@
     padding: 10px;
     padding-left: 30px;
     background: #F7F7F7;
+  }
+  .table{
+  	margin-left: 40px;
+	margin-bottom: 45px; 
   }
 }
